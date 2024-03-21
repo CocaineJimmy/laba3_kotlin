@@ -20,33 +20,25 @@ private val items = listOf(
     BookCategory(
         R.string.name,
         listOf(
-            R.drawable.pic1_1,
-            R.drawable.pic1_2,
-            R.drawable.pic1_3
+            R.drawable.advanced_architecture_android,
+            R.drawable.android_aprentice,
+            R.drawable.saving_data_android
         )
     ),
     BookCategory(
         R.string.name,
         listOf(
-            R.drawable.pic2_1,
-            R.drawable.pic2_2,
-            R.drawable.pic2_3
+            R.drawable.core_data,
+            R.drawable.kotlin_coroutines,
+            R.drawable.kotlin_aprentice
         )
     ),
     BookCategory(
         R.string.name,
         listOf(
-            R.drawable.pic3_1,
-            R.drawable.pic3_2,
-            R.drawable.pic3_3
-        )
-    ),
-    BookCategory(
-        R.string.name,
-        listOf(
-            R.drawable.pic4_1,
-            R.drawable.pic4_2,
-            R.drawable.pic4_3
+            R.drawable.combine,
+            R.drawable.rx_swift,
+            R.drawable.ios_apprentice
         )
     )
 )

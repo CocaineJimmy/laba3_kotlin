@@ -25,4 +25,5 @@
     <string name="grid_button_nav">Grid</string>
     <string name="menu">Меню</string>
     <string name="compApp">MyComposeApp</string>
+    <string name="name">Курс</string>
 </resources>

@@ -27,7 +27,7 @@ import com.raywenderlich.android.lab1.router.BackButtonHandler
 import com.raywenderlich.android.lab1.router.FundamentalsRouter
 import com.raywenderlich.android.lab1.router.Screen
 
-private val items = listOf(
+val items = listOf(
     BookCategory(
         R.string.name,
         listOf(

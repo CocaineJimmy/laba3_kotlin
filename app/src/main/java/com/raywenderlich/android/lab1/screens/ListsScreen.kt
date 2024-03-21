@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
+import androidx.compose.foundation.lazy.items
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -27,7 +28,7 @@ import com.raywenderlich.android.lab1.router.BackButtonHandler
 import com.raywenderlich.android.lab1.router.FundamentalsRouter
 import com.raywenderlich.android.lab1.router.Screen
 
-val items = listOf(
+private val items = listOf(
     BookCategory(
         R.string.name,
         listOf(
@@ -57,19 +58,16 @@ val items = listOf(
 @Composable
 fun ListScreen(){
     MyList()
-
     BackButtonHandler {
         FundamentalsRouter.navigateTo(Screen.Navigation)
     }
 }
-
 @Composable
 fun MyList(){
     LazyColumn{
         items(items) { item -> ListItem(item)}
     }
 }
-
 @Composable
 fun ListItem(bookCategory: BookCategory, modifier: Modifier = Modifier){
     Column (modifier = Modifier.padding(8.dp)) {
@@ -87,15 +85,15 @@ fun ListItem(bookCategory: BookCategory, modifier: Modifier = Modifier){
         }
     }
 }
-
+@Composable
 fun BookImage(imageResource: Int){
     Image(
+        painter = painterResource(id = imageResource),
         contentDescription = stringResource(id = R.string.menu),
         modifier = Modifier
             .size(200.dp)
             .padding(4.dp))
 }
-
 data class BookCategory(
     @StringRes
     val categoryResourcesId: Int,
